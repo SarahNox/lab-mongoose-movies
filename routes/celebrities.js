@@ -61,8 +61,10 @@ router.post('/:id', (req, res, next) => {
   });
 });
 
-router.post('/:id/delete', (req, res, next) => {
+// not working yet
+router.get('/:id/delete', (req, res, next) => {
   const id = req.params.id;
+  console.log(id);
   Celebrity.findByIdAndRemove(id, (err, celebrity) => {
     if (err){ return next(err); }
     return res.redirect('/celebrities');
