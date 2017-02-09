@@ -1,0 +1,12 @@
+<form action="/celebrities/<%= celebrity._id %>" method="POST">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" value="<%= celebrity.name %>">
+
+  <label for="occupation">Job</label>
+  <input type="text" id="occupation" name="occupation" value="<%= celebrity.occupation %>">
+
+  <label for="catchPhrase">most used words</label>
+  <textarea type="text" name="catchPhrase" id="catchPhrase"><%= celebrity.catchPhrase %></textarea>
+
+  <button type="submit">Update Celebrity</button>
+</form>

@@ -1,0 +1,12 @@
+<h1> What to watch this year </h1>
+
+<ul>
+  <% movies.forEach((movie) => { %>
+    <li>
+      <%= movie.title %>
+      <a href="/movies/<%= movie._id %>">Details</a>
+      <a href="/movies/<%= movie._id %>/edit/">Edit</a>
+      <a href="/movies/<%= movie._id %>/delete/">Delete</a>
+    </li>
+  <%  }) %>
+</ul>
