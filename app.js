@@ -28,7 +28,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/movies', movies);
 app.use('/celebrities', celebrities);
-// app.use(express.favicon(__dirname + '/views/favicon.ico')); 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
